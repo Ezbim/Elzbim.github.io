@@ -10,11 +10,11 @@
 
 @font-face {
     font-family:  'VALORANT';
-    src: url("./assets/Font/Valorant\ Font.ttf") format('truetype');
+    src: url("../assets/Font/Valorant\ Font.ttf") format('truetype');
 }
 @font-face {
     font-family:  'Lemon/Milk';
-    src: url("./assets/Font/LemonMilk.otf") format('opentype');
+    src: url("../assets/Font/LemonMilk.otf") format('opentype');
 }
 
 .navbar {
