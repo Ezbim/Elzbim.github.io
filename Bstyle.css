@@ -49,10 +49,7 @@
     display: flex;
     align-items: center;
     list-style: none;
-    text-align: center;
-    text-decoration: line-through;
-    
-    
+    text-align: center; 
 }
 .nav__links {
     color: white;
@@ -67,7 +64,7 @@
     height: 80px;
 }
 .nav__links:hover{
-    color: greenyellow;
+    color: gray;
 }
 
 #nav__logo {
@@ -102,12 +99,10 @@
 }
 
 .button:hover {
-    background-color: black;
+    background-color: gray;
     color: white;
     transition: all 0.3s ease 0s;
-    border-width:2px ;
     border-color: white;
-    border-style: solid;
 }
 
 /* Hero SECTION */
