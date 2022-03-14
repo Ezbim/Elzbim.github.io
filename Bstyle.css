@@ -6,6 +6,8 @@
     list-style: none;
     text-decoration: none;
     max-width: 100%;
+    color: #fff
+    
 }
 
 @font-face {
@@ -112,9 +114,11 @@
     margin:0;
     padding:0;
     max-width: 100%;
+    
+}
 
-    
-    
+.hero__text {
+
 }
 .hero__container {
     width:100vw;
@@ -135,8 +139,8 @@
 .hero__object{
     display: flex;
     margin: 15px;
-    width: 400px;
-    height: 250px;
+    width: 900px;
+    height: 350px;
     max-width: 100%;
     position: sticky;
     background-color:black;
@@ -145,11 +149,11 @@
     align-items: center;
     transform: perspective(1000px);
     transition: all 0.3s ease 0s;
-    box-shadow: 10px 10px 20px 3px gray;
+    box-shadow: 0px 0px 20px 1px rgb(102, 100, 97);
 }
 
 .object {
-    margin: 30px;
+    margin: 50px;
     width: 15px;
     top: 0;
     left:0;
@@ -163,63 +167,63 @@
 /* gray base */
 .logo1 {
     position: absolute;
-    width:55px;
-    top:55px;
+    width:75px;
+    top:100px;
     transform: translateZ(190px);
 }
 
 /* base */
 .logo3 {
     position: absolute;
-    width:70px;
-    top:98px;
+    width:90px;
+    top:158px;
     transform: translateZ(250px);
 
 }
 /* gold big */
 .logo4 {
     position: absolute;
-    width:28px;
-    top:88px;
+    width:48px;
+    top:143px;
     transform: translateZ(250px);
 
 }
 /* gold small */
 .logo5 {
     position: absolute;
-    width:14px;
-    top:80px;
+    width:24px;
+    top:130px;
     transform: translateZ(290px);
 
 }
 /* big ring */
 .logo6 {
     position: absolute;
-    width:75px;
-    top: 67px;
+    width:95px;
+    top: 112px;
     transform: translateZ(190px);
 }
 /* top white */
 .logo7 {
     position: absolute;
-    width:38px;
-    top: 50px;
+    width:58px;
+    top: 90px;
     transform: translateZ(250px);
 
 }
 /* smallring */
 .logo8 {
     position: absolute;
-    width:41px;
-    top:70px;
+    width:61px;
+    top:115px;
     transform: translateZ(230px);
 
 }
 /* silver bits */
 .logo9 {
     position: absolute;
-    top:65px;
-    width:8px;
+    top:110px;
+    width:10px;
     transform: translateZ(230px);
 
 
@@ -241,9 +245,8 @@
 .valid2 {
     color: white;
     opacity: 30%;
-    font-size:60px ;
-    position: absolute;
-    top: 80px;
+    font-size:150px ;
+    
     font-family: VALORANT;
 }
 
@@ -260,8 +263,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:300;
     font-size:10px;
-    top:36px;
-    right:35px;
+    top:56px;
+    right:75px;
     transform: translateZ(90px)
 }
 
@@ -286,7 +289,7 @@
     width: 100%;
     height:100%;
     max-width: 100%;
-    background-color:#dbdbdb;
+    background-color:#141414;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
