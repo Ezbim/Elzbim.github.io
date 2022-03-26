@@ -23,13 +23,27 @@
                     <li class="nav__item" > <a class="nav__links" href="#">Gamers</a> </li>
                     <li class="nav__item" > <a class="nav__links" href="#">Playlist</a> </li>
                     <li class="nav__item" > <a class="nav__links" href="portfolio.html">Portfolio </a></li>
-                    <li class="nav__btn" > <a class="button"href="#"> Message</a></li>
+                    <li class="nav__btn" id="mesage"> <a class="button"href="#"> Message</a></li>
 
                 </ul>
+                
             </div>
+            
         </nav>
+        <div class="msg">
+            <div class="msg__box">
+                <div class="close__container" ><a href="#" class="close"></a></div>
+                <div class="msg__title" >PRIVATE MESSAGE <p style="color: black; font-weight: lighter;">&nbsp; to</p><img class="logo2" src="./assets/Asset2 _1.svg"></img>  </div>
+                
+                <textarea name="comment" id="mbox" placeholder="TELL ME" ></textarea>
+                <div class="align__2">
+                    <textarea name="name" id="mname" placeholder="NAME"></textarea>
+                    <button onClick="send()" id="mbut" >SEND</button> 
+                </div>    
+            </div>
+        </div>
     </header>
-    <bodie>
+    <bodie class="yoi">
         <div class="hero">
             <div class="hero__container">
                 <section class="hero__content">
@@ -61,12 +75,19 @@
                         <h4>"The website is in progress and I'm doing an experiment"</h4>
                         <h7>static website using HTML, CSS, and JavaScript.</h7>
                     </div>
-                    <div id="root"></div>
-                    
+                    <div id="root"></div> 
                 </section>
+                
                
                 
             </div>
+            <!-- <div class="hero__container2">
+                <section>
+                    <div class="hero__content2">
+                        <div class="sup">SUP BOIIS!</div>
+                    </div>
+                </section>
+            </div> -->
             <section class="footer__container">
                     <div class="footer__content">
                         <p1 class="footer" >Socialmedia
@@ -86,10 +107,10 @@
                                 <p2 class="footer__iner"> ELZBIM © 2022 </p2>
                             </li>
                         </p1>
-                        
+                         <p1 class="fooer3"> ELZBIM © 2022 </p1>
                     </div>
-                        <p1 class="fooer3"> ELZBIM © 2022 </p1>
-                </section>
+                       
+            </section>
         </div>
     </bodie>
 
