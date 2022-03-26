@@ -23,11 +23,23 @@
                     <li class="nav__item" > <a class="nav__links" href="#">Gamers</a> </li>
                     <li class="nav__item" > <a class="nav__links" href="#">Playlist</a> </li>
                     <li class="nav__item" > <a class="nav__links" href="portfolio.html">Portfolio </a></li>
-                    <li class="nav__btn" > <a class="button"href="#"> Message</a></li>
+                    <li class="nav__btn" id="mesage" > <a class="button"href="#"> Message</a></li>
 
                 </ul>
             </div>
         </nav>
+        <div class="msg">
+            <div class="msg__box">
+                <div class="close__container" ><a href="#" class="close"></a></div>
+                <div class="msg__title" >PRIVATE MESSAGE <p style="color: black; font-weight: lighter;">&nbsp; to</p><img class="logo2" src="./assets/Asset2 _1.svg"></img>  </div>
+                
+                <textarea name="comment" id="mbox" placeholder="TELL ME" ></textarea>
+                <div class="align__2">
+                    <textarea name="name" id="mname" placeholder="NAME"></textarea>
+                    <button onClick="send()" id="mbut" >SEND</button> 
+                </div>    
+            </div>
+        </div>
     </header>
     <bodie>
         <div class="hero">
