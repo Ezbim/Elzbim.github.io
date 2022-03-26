@@ -22,6 +22,8 @@ xbut.addEventListener('click',function(){
 mseg.addEventListener('click', function() {
     msegLinks.classList.toggle('active');
     bground.classList.toggle('active');
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
     
 });
 
