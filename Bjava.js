@@ -11,7 +11,7 @@ menu.addEventListener('click', function() {
 const mseg = document.querySelector('#mesage');
 const msegLinks = document.querySelector('.msg');
 const bground = document.querySelector('.hero');
-const xbut = document.querySelector('.close')
+const xbut = document.querySelector('.close');
 
 xbut.addEventListener('click',function(){
     msegLinks.classList.toggle('active');
