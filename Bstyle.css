@@ -29,7 +29,7 @@
     --bw-color:gray;
 }
 
-.light-mode {
+.light--mode {
     --primary-color: white;
     --second-color:black ;
     --shadow-color: gray;
@@ -511,7 +511,6 @@
     display: flex;
     font-size:30px;
     margin-top: -3px;
-    margin-left: px ;
     width: 80%;
     height:50px;
     transition: all 0.2s;
@@ -736,7 +735,7 @@
 
     .light__mode {
         position: relative;
-        top: 300px;
+        top: 200px;
         width:60%;
         margin-left:35px;
         padding: 0 2rem;

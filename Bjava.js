@@ -28,7 +28,7 @@ mseg.addEventListener('click', function() {
 const light = document.getElementById('lightmode')
 const tog = document.getElementById('radiant3').value='1';
 light.onclick = function (){
-    document.body.classList.toggle('light-mode')
+    document.body.classList.toggle('light--mode')
     
     if (document.getElementById('radiant3').value=='1')
     {
@@ -55,7 +55,6 @@ light.onclick = function (){
         document.getElementById('radiant9').src="./assets/Logo/SVG/Asset 9.svg";
     }
 }
- 
 function send() {
     var z = document.querySelector('#mname').value;
     var y = document.querySelector('#mbox').value;
