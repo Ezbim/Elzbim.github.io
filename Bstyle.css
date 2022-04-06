@@ -6,7 +6,7 @@
     list-style: none;
     text-decoration: none;
     max-width: 100%;
-    color: #fff
+    color: var(--second-color);
     
 }
 
@@ -19,11 +19,30 @@
     src: url("../assets/Font/LemonMilk.otf") format('opentype');
 }
 
+:root {
+    --primary-color:black;
+    --second-color:white;
+    --shadow-color:gray;
+    --bg-color:#141414;
+    --hover-color:gray;
+    --invert-color:invert(0%);
+    --bw-color:gray;
+}
+
+.light-mode {
+    --primary-color: white;
+    --second-color:black ;
+    --shadow-color: gray;
+    --bg-color:white;
+    --hover-color:gray;
+    --invert-color:invert(100%);
+    --bw-color:black;
+}
 .navbar {
     box-sizing: border-box;
-    color:white;
+    color:var(--second-color);
     display:flex;
-    background-color: black;
+    background-color:var(--primary-color);
     justify-content: center;
     height:90px;
     width: 100%;
@@ -32,6 +51,7 @@
     position:absolute;
     top: 0;
     z-index: 999;
+    border-bottom: 1px solid black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
@@ -39,7 +59,6 @@
 .nav__container {
     width: 100%;
     max-width: 100%;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +74,7 @@
     text-decoration: none;
 }
 .nav__links {
-    color: white;
+    color:var(--second-color);
     display: flex;
     align-items : center;
     justify-content: center;
@@ -67,20 +86,21 @@
     height: 80px;
 }
 .nav__links:hover{
-    color: gray;
+    color:var(--hover-color);
 }
 
 #nav__logo {
-    color: white;
+    color:var(--second-color);
     font-weight: bolder;
     font-size: 1.5rem;
     display: flex;
     align-items : center;
     
+    
 }
 
 .logo {
-    
+    filter: var(--invert-color);
     width: 30px;
     margin:0px 10px ;
     align-items: center;
@@ -106,17 +126,15 @@
     position: sticky;
     padding: 10px 30px;
     width: 100%;
-    background-color:white;
-    color:black;
+    background-color:var(--second-color);
+    color:var(--primary-color);
     border-radius:30px;
-    border-width: green 10px;
 }
 
 .button:hover {
-    background-color: gray;
-    color: white;
+    background-color:var(--hover-color);
+    color: var(--second-color);
     transition: all 0.3s ease 0s;
-    border-color: white;
 }
 
 /* Hero SECTION */
@@ -130,7 +148,7 @@
     margin:0;
     padding:0;
     max-width: 100%;
-    filter: blur(1px);
+    
 }
 
 .hero__container {
@@ -144,9 +162,6 @@
     
 }
 
-.sup {
-    color: black;
-}
 
 .hero__object__container {
     display: flex;
@@ -165,13 +180,13 @@
     height: 350px;
     max-width: 100%;
     position: sticky;
-    background-color:black;
+    background-color:var(--primary-color);
     transform-style: preserve-3d;
     justify-content: center;
     align-items: center;
     transform: perspective(1000px);
     transition: all 0.3s ease 0s;
-    box-shadow: 0px 0px 20px 1px rgb(102, 100, 97);
+    box-shadow: 0px 0px 20px 1px var(--shadow-color);
 }
 
 .object {
@@ -183,6 +198,7 @@
     transition: all 0.9s ease 0s;
     transform: translateZ(50px);
     transition: all 0.3s ease 0s;
+    filter: var(--invert-color);
     
 }
 
@@ -192,6 +208,7 @@
     width:75px;
     top:100px;
     transform: translateZ(190px);
+    
 }
 
 /* base */
@@ -200,6 +217,7 @@
     width:90px;
     top:158px;
     transform: translateZ(250px);
+    
 
 }
 /* gold big */
@@ -208,7 +226,7 @@
     width:48px;
     top:143px;
     transform: translateZ(250px);
-
+    
 }
 /* gold small */
 .logo5 {
@@ -216,7 +234,7 @@
     width:24px;
     top:130px;
     transform: translateZ(290px);
-
+    
 }
 /* big ring */
 .logo6 {
@@ -224,6 +242,7 @@
     width:95px;
     top: 112px;
     transform: translateZ(190px);
+    
 }
 /* top white */
 .logo7 {
@@ -231,7 +250,7 @@
     width:58px;
     top: 90px;
     transform: translateZ(250px);
-
+    
 }
 /* smallring */
 .logo8 {
@@ -239,6 +258,8 @@
     width:61px;
     top:115px;
     transform: translateZ(230px);
+    
+    
 
 }
 /* silver bits */
@@ -247,6 +268,7 @@
     top:110px;
     width:10px;
     transform: translateZ(230px);
+    
 
 
 }
@@ -261,12 +283,12 @@
     font-family: 'Lemon/Milk', sans-serif;
     position: absolute;
     bottom:60px;
-    color: white;
+    color: var(--second-color);
     
 }
 .valid2 {
-    color: white;
-    opacity: 30%;
+    color: var(--bw-color);
+    opacity: 100%;
     font-size:150px ;
     
     font-family: VALORANT;
@@ -276,18 +298,19 @@
     padding: 3px 12px;
     border-width: 1px;
     border-style: solid;
-    border-color: white;
+    border-color: var(--second-color);
     border-radius:10px;
     color:rgb(231, 153, 8);
     list-style: inside;
     display: flex;
     position: absolute;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:300;
+    font-weight:bold;
     font-size:10px;
     top:56px;
     right:75px;
-    transform: translateZ(90px)
+    transform: translateZ(90px);
+
 }
 
 .circle {
@@ -311,7 +334,7 @@
     width: 100%;
     height:100%;
     max-width: 100%;
-    background-color:#141414;
+    background-color:var(--bg-color);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -332,9 +355,11 @@
     width:100vw;
     height: 25vh;
     max-width: 100%;
-    background-color:black;
+    font-weight: 500;
+    background-color:var(--primary-color);
     position: absolute;
-    color: #fff;
+    color: var(--second-color);
+    border-top: 1px solid black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -358,7 +383,7 @@
 .footer {
     margin:20px auto;
     text-align:center;
-    color: gray;
+    color: var(--hover-color);
 }
 
 #footer1 {
@@ -372,14 +397,11 @@
     margin-bottom: 20px;
     opacity: 40%;
     font-size: 10px;
-    
-    
-    
 }
 
 .footer__iner {
     font-size:13px;
-    color: white;
+    color: var(--second-color);
 }
 .meki {
     margin-top:5px;
@@ -391,27 +413,14 @@
 }
 
 #instagram {
-    
-   
+    filter: var(--invert-color);
     width:20px;
 }
 
 #youtube {
+    filter: var(--invert-color);
     fill: #00ff1e;
     width:25px;
-}
-
-.hero__content2 p{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    text-align:center;
-    width: 100%;
-    height:100%;
-    position: absolute;
-    background-color:rgb(56, 56, 55);
-    color: rgb(255, 251, 251);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .msg {
@@ -579,45 +588,54 @@
     transform: rotate(-45deg);
     position: fixed;
   }
+
+  .light__mode {
+    width: 90px;
+    cursor: pointer;
+  }
 /* MOBILE VERSION */
 
 @media screen and (max-width:820px) {
     .nav__container{
         justify-content:space-between;
         max-width: 1300px;
-        background-color: black;
+        background-color: var(--primary-color);
         width: 100%;
         padding: 30px;
         position:fixed;
         display: flex;
         height: 100px;
         transition: all 0.5s ease;
+        border-bottom: 1px solid black;
+        z-index:100;
     }
 
     .nav__menu {
         display:inline-block;
-        position: fixed;
-        background-color: black;
+        position: absolute;
+        justify-content:center;
+        background-color: var(--primary-color);
         height: 100%;
         width: 50%;
         margin-top:100px;
         right: -1000px;
         padding: 700px 10px;
         transition: all 0.5s ease;
+        z-index: -1;
     }
     .nav__menu.active{
         transition: all 0.5s ease;
-        z-index: 1;
         display:inline-block;
         position: fixed;
-        background-color: black;
+        justify-content:center;
+        background-color: var(--primary-color);
         height: 100%;
         width: 50%;
         margin-top:100px;
         right: 0px;
         padding: 1000px 10px;
+        
     }
-    
 
     .nav__btn {
         margin-top:20px;
@@ -629,7 +647,7 @@
         margin: 5px auto;
         
         transition: all 0.3s ease-in-out;
-        background:#fff;
+        background:var(--second-color);
     }
 
     .navbar__toggle .bar {
@@ -682,7 +700,30 @@
         margin: 10px;
         width: 300px;
         height: 150px;
-        
+    }
+    .logo1 {
+        opacity: 0;
+    }
+    .logo3 {
+        opacity: 0;
+    }
+    .logo4 {
+        opacity: 0;
+    }
+    .logo5 {
+        opacity: 0;
+    }
+    .logo6 {
+        opacity: 0;
+    }
+    .logo7 {
+        opacity: 0;
+    }
+    .logo8 {
+        opacity: 0;
+    }
+    .logo9 {
+        opacity: 0;
     }
 
     .object {
@@ -691,6 +732,18 @@
         top: 22px;
         left: 38px;
 
+    }
+
+    .light__mode {
+        position: relative;
+        top: 300px;
+        width:60%;
+        margin-left:35px;
+        padding: 0 2rem;
+ 
+       
+        
+        
     }
 
     #radiant{
